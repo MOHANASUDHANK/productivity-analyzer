@@ -8,24 +8,25 @@
 </head>
 <body>
     <h2>Website Usage Insights</h2>
+    <div class="scroll-container">
+    <div class="section">
 
     <div class="container">
-        <!-- Productive Websites -->
         <div class="box">
             <div class="title">🟢 Productive Websites</div>
             <div id="productive-list"></div>
         </div>
 
-        <!-- Non-Productive Websites -->
         <div class="box">
             <div class="title">🔴 Non-Productive Websites</div>
             <div id="non-productive-list"></div>
         </div>
     </div>
 
-    <!-- Pie Chart: Productive vs Non-Productive -->
-    <div class="chart-container">
+    </div>
+    <div  class="section">
         <h3>Productivity Breakdown</h3>
+    <div class="container">
         <div class="pie-chart">
             <div class="pie" id="pieChart"></div>
             <div class="percentage-label" id="piePercentage"></div> <!-- Show percentage -->
@@ -35,13 +36,14 @@
             <div class="label"><span class="color-box red"></span> Non-Productive</div>
         </div>
     </div>
-
-    <!-- Bar Chart: Breakdown of Productive Work -->
-    <div class="chart-container">
+    </div>
+    <div class="section">
         <h3>Top 5 Productive Websites</h3>
+    <div class="container">
         <div id="barChart"></div>
     </div>
-
+    </div>
+    </div>
     <script src="details.js"></script>
 </body>
 </html>
