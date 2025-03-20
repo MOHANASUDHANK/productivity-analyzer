@@ -1,0 +1,160 @@
+/* Dark Theme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.box {
+    flex: 1;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    min-height: 300px;
+}
+.time-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+.favicon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.productive {
+    color: #00ff00;
+    font-weight: bold;
+}
+.non-productive {
+    color: #ff4444;
+    font-weight: bold;
+}
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Pie Chart */
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+.pie {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        green 0% 50%, /* Adjusted dynamically */
+        red 50% 100%
+    );
+}
+.percentage-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.chart-labels {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+.label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.color-box {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+.green { background-color: green; }
+.red { background-color: red; }
+
+/* Bar Chart */
+/* Bar Chart */
+#barChart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.bar-label {
+    width: 120px; /* Fixed width for proper alignment */
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.bar-container {
+    flex: 1;
+    background-color: #333;
+    border-radius: 5px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.bar-fill {
+    height: 100%;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+}
+
+.bar-time {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    min-width: 80px;
+    text-align: right;
+}
+
